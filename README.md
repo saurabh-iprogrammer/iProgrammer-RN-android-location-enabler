@@ -1,4 +1,4 @@
-# react-native-android-location-enabler
+# iprogrammer-rn-android-location-enabler
 
 Allow to display a GoogleMap like android popup to ask for user to enable location services if disabled
 
@@ -10,7 +10,7 @@ Allow to display a GoogleMap like android popup to ask for user to enable locati
 
 ### Installation
 
-`$ npm install react-native-android-location-enabler --save`
+`$ npm install iprogrammer-rn-android-location-enabler --save`
 
 Since ReactNative 0.60.0 and ReactNative Cli 2.0.0, no action is needed to add a native module.
 
@@ -18,11 +18,11 @@ Since ReactNative 0.60.0 and ReactNative Cli 2.0.0, no action is needed to add a
 
 ### Installation
 
-`$ npm install react-native-android-location-enabler@1.1.0 --save`
+`$ npm install iprogrammer-rn-android-location-enabler@1.1.0 --save`
 
 #### Configuration
 
-`$ react-native link react-native-android-location-enabler`
+`$ react-native link iprogrammer-rn-android-location-enabler`
 
 #### Manual Configuration
 
@@ -33,12 +33,12 @@ Since ReactNative 0.60.0 and ReactNative Cli 2.0.0, no action is needed to add a
 
 2. Append the following lines to `android/settings.gradle`:
    ```
-   include ':react-native-android-location-enabler'
-   project(':react-native-android-location-enabler').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-android-location-enabler/android')
+   include ':iprogrammer-rn-android-location-enabler'
+   project(':iprogrammer-rn-android-location-enabler').projectDir = new File(rootProject.projectDir, 	'../node_modules/iprogrammer-rn-android-location-enabler/android')
    ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
    ```
-     compile project(':react-native-android-location-enabler')
+     compile project(':iprogrammer-rn-android-location-enabler')
    ```
 
 ## Usage
@@ -46,7 +46,7 @@ Since ReactNative 0.60.0 and ReactNative Cli 2.0.0, no action is needed to add a
 ### Check if location is enabled
 
 ```typescript
-import { isLocationEnabled } from 'react-native-android-location-enabler';
+import { isLocationEnabled } from 'iprogrammer-rn-android-location-enabler';
 import { Platform } from 'react-native';
 
 async function handleCheckPressed() {
@@ -60,7 +60,7 @@ async function handleCheckPressed() {
 ### Show a modal to ask user to enable location
 
 ```typescript
-import { promptForEnableLocationIfNeeded } from 'react-native-android-location-enabler';
+import { promptForEnableLocationIfNeeded } from 'iprogrammer-rn-android-location-enabler';
 import { Platform } from 'react-native';
 
 async function handleEnabledPressed() {
